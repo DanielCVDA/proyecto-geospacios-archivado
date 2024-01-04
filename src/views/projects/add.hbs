@@ -1,0 +1,45 @@
+<div class="container p-4" style="font-family: 'Oswald', sans-serif">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card card-center animated flipInY">
+                <div class="card-header text-center">
+                    <h3>Crear proyecto</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/projects/add" name="formulario" method="POST">
+                        <div class="form-group">
+                            <span>Nombre proyecto: </span>
+                            <input type="text" name="projectname" placeholder="Proyecto cesfam" class="form-control project">
+                        </div>
+                        <div class="form-group">
+                            <span>N° de avance: </span>
+                            <input type="number" min="0" name="number_adv" placeholder="0" class="form-control project">
+                        </div>
+                        <div class="form-group">
+                            <span>Ruta del proyecto: </span>
+                            <input type="url" name="route" placeholder="https:// ..." class="form-control project">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block project" name="btn" id="btn">
+                                Crear
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{!-- 
+<script>
+    function(){
+        var formulario = document.getElementsByName('formulario')[0];
+            name = document.getElementsByName('projectname');
+            number_adv = document.getElementsByName('number_adv');
+            route = document.getElementsByName('route');
+            btn = document.getElementsByName('#btn');
+
+        
+        
+    }
+</script> --}}

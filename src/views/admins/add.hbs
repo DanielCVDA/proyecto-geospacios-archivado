@@ -1,0 +1,36 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card card-center animated flipInY">
+                <div class="card-header text-center">
+                    <h3>Crear administrador</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/admins/add" method="POST">
+                        <div class="form-group">
+                            <span>Nombre completo: </span>
+                            <input type="text" name="fullname" placeholder="Juan soto" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <span>Usuario: </span>
+                            <input type="text" name="username" placeholder="Juan123" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <span>Contraseña: </span>
+                            <input type="password" name="password" placeholder="*******" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <span>Repita Contraseña: </span>
+                            <input type="password" name="passwordVal" placeholder="*******" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success btn-block">
+                                Crear
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
